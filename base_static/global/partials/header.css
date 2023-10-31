@@ -13,6 +13,7 @@ header{
 
 
 .search-input{
+    border: 1px solid gray;
     border-radius: 3px;
     height: fit-content;
     padding: 7px;
