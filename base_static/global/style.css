@@ -37,7 +37,7 @@ header .header-container .link{
     font-family: var(--default-font-family);
 }
 
-#title, #recipe-title, #author, #price, #description{
+.title, #recipe-title, #author, #price, #description{
     font-family: var(--card-font-family);
 }
 
