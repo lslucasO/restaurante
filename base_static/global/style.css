@@ -33,6 +33,6 @@
 }
 
 
-header, main, footer{
+header .header-container .link{
     font-family: var(--default-font-family);
 }
