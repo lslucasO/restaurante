@@ -7,7 +7,6 @@
     <p>Best meals in your favorite website!</p>
 </div>
 
-
 <div class="main-content-container">
     <div class="category-container">
         <h2 class="category-title">Filter by Categorys</h2>
@@ -28,18 +27,20 @@
         </ul>
     </div>
     <div class="card-container">
-        <div class="card">
-            <div class="content">
-                <section class="card-items">
-                    <h3 class="item" id="recipe-title">Title</h3>
-                    <p class="item" id="author">Author</p>
-                    <p class="item" id="description">Molho de tomate, mussarela, filé de camarão fresco (250g) em pedaços, cream cheese, cebolinho e molho teriyaki feito na casa.</p>
-                    <p class="item" id="price">R$49.99</p>
-                </section>
+        {% for meal in meals %}
+            <div class="card">
+                <div class="content">
+                    <section class="card-items">
+                        <h3 class="item" id="recipe-title">{{meal.title}}</h3>
+                        <p class="item" id="author"><img style="width: 10px;" src="{% static 'restaurant/img/user_icon.png' %}" alt=""> {{meal.author}}</p>
+                        <p class="item" id="description">{{meal.description}}</p>
+                        <p class="item" id="price">R${{meal.price}}</p>
+                    </section>
+                </div>
+                <figure class="card-img-container">
+                    <img src="{{meal.cover.url}}" alt="" class="card-img">
+                </figure>
             </div>
-            <figure class="card-img-container">
-                <img src="{% static 'restaurant/img/test-img.jpg' %}" alt="" class="card-img">
-            </figure>
-        </div>
+        {% endfor %}
     </div>
 </div>

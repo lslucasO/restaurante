@@ -25,9 +25,10 @@ li{
 }
 
 .card{
+    border-radius: 8px;
     margin: auto;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.301);
-    height: 180px;
+    height: fit-content;
     max-width: 480px;
     transition: 0.5s;
     margin-bottom: 40px;
