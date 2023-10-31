@@ -36,3 +36,16 @@
 header .header-container .link{
     font-family: var(--default-font-family);
 }
+
+#title, #recipe-title, #author, #price, #description{
+    font-family: var(--card-font-family);
+}
+
+#title, #recipe-title{
+    font-size: 1.5em;
+}
+
+#author, #description{
+    font-size: 0.9em;
+    color: gray;
+}

@@ -6,5 +6,5 @@ app_name = 'restaurant'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
 ]

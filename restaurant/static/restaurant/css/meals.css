@@ -1,0 +1,29 @@
+.card{
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.301);
+    height: 200px;
+    max-width: 500px;
+    transition: 0.5s;
+    display: flex;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+}
+
+.card-items{
+    padding: 20px;
+}
+
+.card-img{
+    width: 260px;
+    height: 200px;
+}
+
+.item{
+    padding-bottom: 5px;
+}
