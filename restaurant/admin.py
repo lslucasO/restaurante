@@ -14,11 +14,34 @@ class MealAdmin(admin.ModelAdmin):
         'category',
     ]
     
+    search_fields = [
+        'id',
+        'title',
+        'description',
+        'created_at',
+        'slug',
+        'category'
+    ]
+    
     list_display_links = [
         'title',
         'created_at'
     ]
 
+    list_per_page = 10
+    
+    list_editable = [
+        'is_published'
+    ]
+    
+    ordering = [
+        '-id'
+    ]
+    
+    prepopulated_fields = {
+        'slug': ('title',)
+    }
+    
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Meal, MealAdmin)
