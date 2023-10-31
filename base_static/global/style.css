@@ -1,0 +1,38 @@
+@import url(https://db.onlinewebfonts.com/c/bb2e1211dfd31103079dbce7c49e1d4e?family=DIN+Neuzeit+Grotesk+LT+W01+BdCn);
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --default-text-hover-color: #C75165;
+    --default-header-font-size: 1.3em; 
+    --default-font-family: "DIN Neuzeit Grotesk LT W01 BdCn";
+    --card-font-family: 'Amazon Ember', sans-serif;
+    --default-text-color: black;
+
+    /* Global Django Messages Styles  */
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+}
+
+
+header, main, footer{
+    font-family: var(--default-font-family);
+}
