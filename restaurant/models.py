@@ -11,6 +11,7 @@ class Category(models.Model):
 
 class Meal(models.Model):
     title = models.CharField(max_length=55)
+    slug = models.SlugField(unique=True, default='')
     description = models.TextField(max_length=165)
     price = models.FloatField()
     cover = models.ImageField(upload_to='shop/covers/%Y/%m/%d/', blank=True, default='')
