@@ -2,40 +2,24 @@
 <link rel="stylesheet" href="{% static 'global/style.css' %}">
 <link rel="stylesheet" href="{% static 'restaurant/css/meals.css' %}">
 
-<div class="main-content-container">
-    <div class="category-container">
-        <h2 class="category-title">Filter by Categorys</h2>
-        <ul>
-            <li><a class="category-item" href="#">Pizza</a></li>
-            <li><a class="category-item" href="#">Combos</a></li>
-            <li><a class="category-item" href="#">Hamburguer</a></li>
-            <li><a class="category-item" href="#">Soda</a></li>
-            <li><a class="category-item" href="#">Spaguettis</a></li>
-            <li><a class="category-item" href="#">Desserts</a></li>
-            <li><a class="category-item" href="#">Combos</a></li>
-            <li><a class="category-item" href="#">Pizza</a></li>
-            <li><a class="category-item" href="#">Hamburguer</a></li>
-            <li><a class="category-item" href="#">Soda</a></li>
-            <li><a class="category-item" href="#">Spaguettis</a></li>
-            <li><a class="category-item" href="#">Desserts</a></li>
-    
-        </ul>
-    </div>
-    <div class="card-container">
-        {% for meal in meals %}
-            <div class="card">
-                <div class="content">
-                    <section class="card-items">
-                        <h3 class="item" id="recipe-title"><a href="{% url 'restaurant:meal-page' meal.id %}">{{meal.title}}</a></h3>
+
+
+<div class="card-container">
+    {% for meal in meals %}
+        <div class="card">
+            <div class="content">
+                <section class="card-items">
+                    <a href="{% url 'restaurant:meal-page' meal.id %}">
+                        <h3 class="item" id="recipe-title">{{meal.title}}</h3>
                         <p class="item" id="author"><img style="width: 10px;" src="{% static 'restaurant/img/user_icon.png' %}" alt=""> {{meal.author}}</p>
                         <p class="item" id="description">{{meal.description}}</p>
                         <p class="item" id="price">R${{meal.price|floatformat:2}}</p>
-                    </section>
-                </div>
-                <figure class="card-img-container">
-                    <img src="{{meal.cover.url}}" alt="" class="card-img">
-                </figure>
+                    </a>
+                </section>
             </div>
-        {% endfor %}
-    </div>
+            <figure class="card-img-container">
+                <a href="{% url 'restaurant:meal-page' meal.id %}"><img src="{{meal.cover.url}}" alt="" class="card-img"></a>
+            </figure>
+        </div>
+    {% endfor %}
 </div>
