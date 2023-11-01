@@ -25,6 +25,9 @@
 }
 
 .meal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 400px;
     padding: 30px;
 }
@@ -53,7 +56,7 @@
 }
 
 .add-order-btn{
-    margin-top: 175px;
+    margin: auto;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
