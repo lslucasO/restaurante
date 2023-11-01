@@ -37,6 +37,10 @@ header .header-container .link{
     font-family: var(--default-font-family);
 }
 
+.main-content-container-flex{
+    display: flex;
+}
+
 .title, #recipe-title, #author, #price, #description{
     font-family: var(--card-font-family);
 }

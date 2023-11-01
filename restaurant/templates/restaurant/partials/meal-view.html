@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'global/style.css' %}">
+<link rel="stylesheet" href="{% static 'restaurant/css/meal-view.css' %}">
+
+
+<div class="meal-container">
+    <section class="meal-header-container">
+        <figure>
+            <a href="{% url 'restaurant:home' %}"><img class="return-homepage-img" src="{% static 'restaurant/img/arrow-left.png' %}" alt=""></a>
+        </figure>
+        <h2 class="meal-header-title">Product Details</h2>
+    </section>
+    <div class="meal">
+    </div>
+</div>

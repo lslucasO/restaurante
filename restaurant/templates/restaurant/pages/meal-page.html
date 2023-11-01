@@ -3,5 +3,8 @@
 {% block title %} {{title}} {% endblock title %}
 
 {% block content %} 
-    {% include 'restaurant/partials/meal-view.html' %}
+    <div class="main-content-container-flex"> 
+        {% include 'restaurant/partials/category.html' %}
+        {% include 'restaurant/partials/meal-view.html' %}
+    </div>
 {% endblock content %}
