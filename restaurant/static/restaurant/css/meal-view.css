@@ -17,5 +17,30 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.229);
 }
 
+.meal{
+    padding: 20px;
+    display: flex;
+}
+
+.meal-info{
+    padding: 30px;
+}
+
+.meal-img{
+    width: 450px;
+}
+
+#meal-price{
+    font-size: 1.2em;
+}
+
+#meal-title{
+    font-size: 1.7em;
+}
+
+#meal-description{
+    font-size: 1em;
+    color: gray;
+}
 
 
