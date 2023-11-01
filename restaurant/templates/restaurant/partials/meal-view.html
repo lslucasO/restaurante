@@ -12,12 +12,15 @@
     </section>
     <div class="meal">
         <figure class="meal-img-container">
-            <img src="{% static 'restaurant/img/test-img.jpg' %}" alt="" class="meal-img">
+            <img src="{{meal.cover.url}}" alt="" class="meal-img">
         </figure>
         <section class="meal-info">
-            <h3 id="meal-title" >Meal Title</h3>
-            <p id="meal-price" class="item">Price</p>
-            <p id="meal-description" class="item">Description</p>
+            <h3 class="item" id="meal-title" >{{meal.title}}</h3>
+            <p id="meal-price" class="item">R${{meal.price|floatformat:2}}</p>
+            <p id="meal-description" class="item">{{meal.description}}</p>
+            <section class="btn">
+                <button type="submit" class="add-order-btn">Add Order</button>
+            </section>
         </section>
     </div>
 </div>

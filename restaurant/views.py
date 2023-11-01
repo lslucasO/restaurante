@@ -24,7 +24,7 @@ def meal(request, id):
     
     context = {
         'title': 'Meal',
-        'meals': meals
+        'meal': meals
     }
     
     return render(request, 'restaurant/pages/meal-page.html', context)

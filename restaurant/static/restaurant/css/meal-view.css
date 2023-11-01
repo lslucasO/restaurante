@@ -5,7 +5,7 @@
 
 .meal-container{
     padding: 50px;
-    width: 90%;
+    width: 80%;
     max-width: 100%;
     text-align: start;
 }
@@ -18,20 +18,29 @@
 }
 
 .meal{
-    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.168);
+    padding: 30px;
     display: flex;
 }
 
 .meal-info{
+    width: 400px;
     padding: 30px;
 }
 
 .meal-img{
+    border-radius: 7px;
+    height: 400px;
     width: 450px;
 }
 
+.item{
+    padding-bottom: 10px;
+}
+
 #meal-price{
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 #meal-title{
@@ -39,8 +48,18 @@
 }
 
 #meal-description{
-    font-size: 1em;
+    font-size: 19px;
     color: gray;
 }
 
-
+.add-order-btn{
+    margin-top: 175px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #1DA4FF;
+    height: 40px;
+    width: 400px;
+}

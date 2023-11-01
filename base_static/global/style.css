@@ -15,6 +15,7 @@
     --default-font-family: "DIN Neuzeit Grotesk LT W01 BdCn";
     --card-font-family: 'Amazon Ember', sans-serif;
     --default-text-color: black;
+    --price-text-color: #1A95F3;
 
     /* Global Django Messages Styles  */
     --color-dark-text: #444;
@@ -57,4 +58,8 @@ header .header-container .link{
 #author{
     font-size: 0.9em;
     color: black;
+}
+
+#price, #meal-price{
+    color: var(--price-text-color);
 }
