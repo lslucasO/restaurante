@@ -3,16 +3,17 @@ li{
     padding-bottom: 3px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 
 .main-content-container{
     display: flex;
 }
 
-.title-container{
-    margin-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
+
 
 .card-container{
     border-right: 1px solid rgba(128, 128, 128, 0.238);

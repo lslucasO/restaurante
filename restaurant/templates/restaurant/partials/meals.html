@@ -2,11 +2,6 @@
 <link rel="stylesheet" href="{% static 'global/style.css' %}">
 <link rel="stylesheet" href="{% static 'restaurant/css/meals.css' %}">
 
-<div class="title-container">
-    <h1 class="title">Recent Releases</h1>
-    <p>Best meals in your favorite website!</p>
-</div>
-
 <div class="main-content-container">
     <div class="category-container">
         <h2 class="category-title">Filter by Categorys</h2>
@@ -31,10 +26,10 @@
             <div class="card">
                 <div class="content">
                     <section class="card-items">
-                        <h3 class="item" id="recipe-title">{{meal.title}}</h3>
+                        <h3 class="item" id="recipe-title"><a href="{% url 'restaurant:meal-page' meal.id %}">{{meal.title}}</a></h3>
                         <p class="item" id="author"><img style="width: 10px;" src="{% static 'restaurant/img/user_icon.png' %}" alt=""> {{meal.author}}</p>
                         <p class="item" id="description">{{meal.description}}</p>
-                        <p class="item" id="price">R${{meal.price}}</p>
+                        <p class="item" id="price">R${{meal.price|floatformat:2}}</p>
                     </section>
                 </div>
                 <figure class="card-img-container">
