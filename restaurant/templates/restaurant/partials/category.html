@@ -6,17 +6,8 @@
 <div class="category-container">
     <h2 class="category-title">Filter by Categorys</h2>
     <ul>
-        <li><a class="category-item" href="#">Pizza</a></li>
-        <li><a class="category-item" href="#">Combos</a></li>
-        <li><a class="category-item" href="#">Hamburguer</a></li>
-        <li><a class="category-item" href="#">Soda</a></li>
-        <li><a class="category-item" href="#">Spaguettis</a></li>
-        <li><a class="category-item" href="#">Desserts</a></li>
-        <li><a class="category-item" href="#">Combos</a></li>
-        <li><a class="category-item" href="#">Pizza</a></li>
-        <li><a class="category-item" href="#">Hamburguer</a></li>
-        <li><a class="category-item" href="#">Soda</a></li>
-        <li><a class="category-item" href="#">Spaguettis</a></li>
-        <li><a class="category-item" href="#">Desserts</a></li>
+        {% for meal in meals %}
+            <li><a class="category-item" href="{% url 'restaurant:category-view' meal.category.id %}">{{meal.category}}</a></li>
+        {% endfor %}
     </ul>
 </div>

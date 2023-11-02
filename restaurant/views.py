@@ -28,3 +28,21 @@ def meal(request, id):
     }
     
     return render(request, 'restaurant/pages/meal-page.html', context)
+
+
+def category_view(request, category):
+    meals = Meal.objects.filter(
+        category=category,
+        is_published=True
+    )
+    
+    context = {
+        'meals': meals,
+        'title': category
+    }
+    
+    return render(request, 'restaurant/pages/category_view.html', context)
+
+
+def category_list(request):
+    return 
