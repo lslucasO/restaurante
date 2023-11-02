@@ -44,5 +44,5 @@ def category_view(request, category):
     return render(request, 'restaurant/pages/category_view.html', context)
 
 
-def category_list(request):
-    return 
+def orders(request):
+    return render(request, 'restaurant/pages/orders.html')

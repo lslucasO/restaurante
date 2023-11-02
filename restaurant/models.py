@@ -24,3 +24,16 @@ class Meal(models.Model):
     
     def __str__(self):
         return self.title
+    
+    
+class Order(models.Model):
+    meal = models.ForeignKey(Meal, on_delete=models.SET_NULL, blank=True, null=True, default=None)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True, default=None)
+    
+    observations = models.TextField(max_length=100, default=None)
+    ordered_at = models.DateTimeField(auto_now_add=True)
+    
+    
+    
+    def __str__(self):
+        return self.meal.title
