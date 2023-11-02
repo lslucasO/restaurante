@@ -66,3 +66,23 @@
     height: 40px;
     width: 400px;
 }
+
+.obs-header{
+    border-radius: 4px;
+    padding: 7px;
+    margin-top: 20px;
+    width: 400px;
+    background-color: #EBEBEB;
+}
+
+.obs{
+    padding: 10px;
+}
+
+.obs-input{
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+}
